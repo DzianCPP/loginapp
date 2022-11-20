@@ -10,7 +10,7 @@ class UserController
     {
         $users = new Users();
         if ($users->insertNewUser()) {
-            $this->show();
+            $this->login();
         } else {
             $email = $_POST['email'];
             $fullName = $_POST['name'];
