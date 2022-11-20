@@ -1,0 +1,28 @@
+{
+    "name": "dzian/loginapp",
+    "autoload": {
+        "psr-4": {
+            "Dzian\\Loginapp\\": "src/",
+            "core\\": "core/",
+            "core\\application\\": "core/application",
+            "core\\controllers\\": "core/controllers",
+            "core\\models\\": "core/models",
+            "core\\views\\": "core/views",
+            "system\\": "system/",
+            "database\\migrations\\": "database/migrations",
+            "database\\": "database/",
+            "database\\migrationHistory\\": "database/migrationHistory",
+            "database\\seeds\\users\\": "database/seeds/users"
+        }
+    },
+    "authors": [
+        {
+            "name": "DzianCPP",
+            "email": "ocherkiprozaika@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "ext-pdo": "*"
+    }
+}
