@@ -1,10 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/forms.css">
+    <meta charset="utf-8">
+    <title>LoginApp</title>
 </head>
+
 <body>
+<h1 class="main-page-header" id="main-page-h1">Log in</h1>
+
+<form class="new-user-form" method="POST" action="/user/login">
+    <div>
+        <label for="login">Login</label>
+    </div>
+    <div>
+        <input type="text" class="input-text" name="login" id="login"
+               placeholder="Enter your login">
+    </div>
+
+    <div>
+        <label class="form-label" for="password">Password</label>
+    </div>
+    <div>
+        <input type="password" class="input-text" name="password" id="password"
+               placeholder="Enter your password">
+    </div>
+    <div>
+        <input type="checkbox" class="checkbox" name="checkbox-password" id="checkbox-password"
+               ontoggle="showPassword()">
+        <label class="form-label" for="checkbox-password">Show password</label>
+        <script src="/assets/scripts/showPassword.js"></script>
+    </div>
+
+    <button type="submit" class="form-submit" id="submit-button" value="login">
+        Login
+    </button>
+</form>
 
 </body>
+
 </html>

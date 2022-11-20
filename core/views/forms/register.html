@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <link rel="stylesheet" href="/assets/css/register.css">
+    <link rel="stylesheet" href="/assets/css/forms.css">
     <meta charset="utf-8">
     <title>LoginApp</title>
 </head>
@@ -10,7 +10,7 @@
 <body>
 <h1 class="main-page-header" id="main-page-h1">Registration</h1>
 
-<form class="new-user-form" method="POST" action="/user/create">
+<form class="new-user-form" method="POST" action="/user/register">
     <div>
         <label for="login">Login</label>
     </div>
@@ -33,10 +33,6 @@
     <div>
         <input type="password" class="input-text" name="password" id="password"
                 placeholder="Enter your password">
-        <input type="checkbox" class="checkbox" name="checkbox-password" id="checkbox-password"
-               ontoggle="showPassword()">
-        <label class="form-label" for="checkbox-password">Show password</label>
-        <script src="/assets/scripts/showPassword.js"></script>
     </div>
 
     <div>
@@ -45,6 +41,12 @@
     <div>
         <input type="password" class="input-text" name="password" id="repeat-password"
                 placeholder="Repeat your password">
+    </div>
+    <div>
+        <input type="checkbox" class="checkbox" name="checkbox-password" id="checkbox-password"
+               ontoggle="showPassword()">
+        <label class="form-label" for="checkbox-password">Show password</label>
+        <script src="/assets/scripts/showPassword.js"></script>
     </div>
 
     <div>
