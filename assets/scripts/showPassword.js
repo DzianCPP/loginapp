@@ -1,0 +1,4 @@
+function showPassword()
+{
+    return true;
+}

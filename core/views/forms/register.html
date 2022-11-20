@@ -1,10 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/register.css">
+    <meta charset="utf-8">
+    <title>LoginApp</title>
 </head>
+
 <body>
+<h1 class="main-page-header" id="main-page-h1">Registration</h1>
+
+<form class="new-user-form" method="POST" action="/user/create">
+    <div>
+        <label for="login">Login</label>
+    </div>
+    <div>
+        <input type="text" class="input-text" name="login" id="login"
+                placeholder="Enter your login">
+    </div>
+
+    <div>
+        <label class="form-label" for="email">Email</label>
+    </div>
+    <div>
+        <input type="text" class="input-text" name="email" id="email"
+                placeholder="Enter your email">
+    </div>
+
+    <div>
+        <label class="form-label" for="password">Password</label>
+    </div>
+    <div>
+        <input type="password" class="input-text" name="password" id="password"
+                placeholder="Enter your password">
+        <input type="checkbox" class="checkbox" name="checkbox-password" id="checkbox-password"
+               ontoggle="showPassword()">
+        <label class="form-label" for="checkbox-password">Show password</label>
+        <script src="/assets/scripts/showPassword.js"></script>
+    </div>
+
+    <div>
+        <label class="form-label" for="repeat-password">Repeat password</label>
+    </div>
+    <div>
+        <input type="password" class="input-text" name="password" id="repeat-password"
+                placeholder="Repeat your password">
+    </div>
+
+    <div>
+        <label class="form-label" for="name">Full name</label>
+    </div>
+    <div>
+        <input type="text" class="input-text" name="name" id="name" placeholder="Enter your full name">
+    </div>
+
+    <button type="submit" class="form-submit" id="submit-button" value="register">
+        Register
+    </button>
+</form>
 
 </body>
+
 </html>
